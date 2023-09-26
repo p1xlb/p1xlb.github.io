@@ -1,0 +1,128 @@
+html{
+    height: 100%;
+}
+
+h1, h2, p{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0; /* Remove default margin */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('bombardier-global-7500.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your background image */
+    background-size: cover; /* Make the background image cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: 25%, 75%;
+    backdrop-filter: brightness(0.6);
+}
+
+/* Header */
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+
+/* Navbar */
+nav {
+    background-color: #004e92;
+    text-align: left;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Main Content */
+.container {
+    max-width: 1850px;
+    max-height: 900px;
+    margin: 50px 700px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow the container to grow to fill available space */
+}
+
+li{
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.profile-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-image img {
+    border-radius: 50%; /* Create a circular profile image */
+    width: 270px; /* Adjust the size of the circular image as needed */
+    height: 270px;
+    object-fit: cover;
+    border: 5px solid #fff; /* Add a white border around the circular image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-me-fields {
+    margin-top: 40px;
+}
+
+.about-me-fields p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #004e92;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+}
+
