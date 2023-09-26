@@ -12,14 +12,14 @@ body{
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     min-height: 100%;
     display: flex;
     flex-direction: column;
 
-    background-image: url('bombardier-global-7500.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your background image */
-    background-size: cover; /* Make the background image cover the entire viewport */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-image: url('bombardier-global-7500.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
     background-position: 25%, 75%;
     backdrop-filter: brightness(0.6);
 }
@@ -74,7 +74,7 @@ nav a {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Allow the container to grow to fill available space */
+    flex: 1;
 }
 
 li{
@@ -98,11 +98,11 @@ p {
 }
 
 .profile-image img {
-    border-radius: 50%; /* Create a circular profile image */
-    width: 270px; /* Adjust the size of the circular image as needed */
+    border-radius: 50%; 
+    width: 270px;
     height: 270px;
     object-fit: cover;
-    border: 5px solid #fff; /* Add a white border around the circular image */
+    border: 5px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -124,5 +124,46 @@ footer {
     padding: 10px;
     position: sticky;
     bottom: 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .profile-image img {
+        width: 100%; 
+        max-width: 270px;
+    }
+
+    .about-me-fields p {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
 

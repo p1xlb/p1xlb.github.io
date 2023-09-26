@@ -9,9 +9,9 @@ body{
     background-color: #f0f0f0;
     color: #333;
     margin: 0; /* Remove default margin */
-    background-image: url('bombardier-global-7500.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your background image */
-    background-size: cover; /* Make the background image cover the entire viewport */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-image: url('bombardier-global-7500.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
     background-position: 25%, 75%;
     backdrop-filter: brightness(0.6);
 }
@@ -87,22 +87,21 @@ p {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center align the cards horizontally */
+    justify-content: center;
 }
 
 .card {
-    flex-basis: calc(33.33% - 20px); /* Adjust the width to fit three cards with spacing */
-    padding: 20px;
+    flex-basis: calc(33.33% - 20px); 
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    margin: 20px; /* Add margin to space the cards evenly */
+    margin: 20px; 
     text-align: center;
 }
 
 .card img {
-    width: 100%; /* Set a fixed width for all images */
-    height: 70%; /* Set a fixed height for all images (adjust as needed) */
-    object-fit: cover; /* Maintain aspect ratio and cover the image area */
+    width: 100%; 
+    height: 70%; 
+    object-fit: cover; 
 }
 
 .card h3 {
@@ -124,3 +123,42 @@ footer {
     position: sticky;
     bottom: 0;
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+        header h1 {
+            font-size: 28px;
+        }
+        nav ul li {
+            margin-right: 10px;
+        }
+        nav a {
+            font-size: 16px;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .card {
+            flex-basis: calc(50% - 10px);
+            margin: 10px;
+        }
+        .card img {
+            height: auto;
+        }
+        .card h3 {
+            font-size: 18px;
+        }
+        .card p {
+            font-size: 14px;
+        }
+        footer {
+            font-size: 14px;
+        }
+    }
