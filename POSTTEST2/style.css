@@ -9,6 +9,7 @@ body{
     background-color: #f0f0f0;
     color: #333;
     margin: 0;
+
     background-image: url('bombardier-global-7500.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -112,7 +113,7 @@ p {
 .card p {
     font-size: 16px;
     line-height: 1.5;
-    padding: 15px;
+    padding: 20px;
 }
 
 /* Footer */
@@ -126,7 +127,7 @@ footer {
 }
 
 /* Mobile */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
         header h1 {
             font-size: 28px;
         }

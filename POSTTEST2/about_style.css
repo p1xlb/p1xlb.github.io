@@ -83,8 +83,8 @@ li{
 
 h2 {
     font-size: 24px;
-    margin-bottom: 20px;
-    margin-left: 40%;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 p {
@@ -102,7 +102,7 @@ p {
     width: 270px;
     height: 270px;
     object-fit: cover;
-    border: 5px solid #fff;
+    border: 5px solid #4e9fcd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -127,7 +127,7 @@ footer {
 }
 
 /* Mobile */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
     header h1 {
         font-size: 28px;
     }
