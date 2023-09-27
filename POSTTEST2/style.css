@@ -8,7 +8,7 @@ body{
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    margin: 0; /* Remove default margin */
+    margin: 0;
     background-image: url('bombardier-global-7500.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat;
