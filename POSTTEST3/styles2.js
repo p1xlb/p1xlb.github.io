@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const themeButton = document.getElementById("theme-button");
-    const button = document.getElementById("button");
     const container = document.querySelector(".container");
     const cards = document.querySelectorAll(".card");
     const fleet = document.querySelector(".fleet")
