@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     profileImage.addEventListener("click", function(){
         if (body.style.backgroundImage === 'url("global-express.jpg")') {
-            body.style.backgroundImage = 'url("bombardier-global-7500.jpg")'; // Change to the original background image URL
+            body.style.backgroundImage = 'url("bombardier-global-7500.jpg")';
         } else {
-            body.style.backgroundImage = 'url("global-express.jpg")'; // Change to the new background image URL
+            body.style.backgroundImage = 'url("global-express.jpg")';
         }
 
 
