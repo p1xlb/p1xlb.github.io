@@ -126,10 +126,9 @@ footer {
     bottom: 0;
 }
 
-/* Add this CSS code to define the dark-theme class styles */
 .dark-theme-container {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background color */
-    color: #fff; /* White text color */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
 }
 
 .dark-theme-card {
