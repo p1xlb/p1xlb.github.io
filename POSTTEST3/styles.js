@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const pc2 = document.querySelector(".PC2")
     const pc3 = document.querySelector(".PC3")
     const pc4 = document.querySelector(".PC4")
+    const profileImage = document.getElementById("profile-image");
+    const body = document.body;
 
     themeButton.addEventListener("click", function () {
         container.classList.toggle("dark-theme-container");
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Feature is not available at the moment. Coming soon...");
     });
 
+    if(hc1)
     hc1.addEventListener("click", function(){
         if(pc1.style.display == "none"){
             pc1.style.display = "block";
@@ -43,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
     })
 
+    if(hc2)
     hc2.addEventListener("click", function(){
         if(pc2.style.display == "none"){
             pc2.style.display = "block";
@@ -53,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
     })
 
+    if(hc3)
     hc3.addEventListener("click", function(){
         if(pc3.style.display == "none"){
             pc3.style.display = "block";
@@ -63,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
     })
 
+    if(hc4)
     hc4.addEventListener("click", function(){
         if(pc4.style.display == "none"){
             pc4.style.display = "block";
@@ -72,4 +78,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         
     })
+
+    profileImage.addEventListener("click", function(){
+        if (body.style.backgroundImage === 'url("global-express.jpg")') {
+            body.style.backgroundImage = 'url("bombardier-global-7500.jpg")';
+        } else {
+            body.style.backgroundImage = 'url("global-express.jpg")';
+        }
+
+
+    });
 });
