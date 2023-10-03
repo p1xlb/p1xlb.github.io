@@ -24,12 +24,20 @@ body{
     backdrop-filter: brightness(0.6);
 }
 
+.logo{
+    width: 95px;
+    height: 95px;
+}
+
 /* Header */
 header {
     background-color: #0077b6;
     color: #fff;
     padding: 20px;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -127,8 +135,8 @@ footer {
 }
 
 .dark-theme-container {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background color */
-    color: #fff; /* White text color */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
 }
 
 .highlighted {
