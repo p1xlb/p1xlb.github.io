@@ -1,0 +1,188 @@
+h1, h2, p{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+
+    background-image: url('bombardier-global-7500.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: 25%, 75%;
+    backdrop-filter: brightness(0.6);
+}
+
+.logo{
+    width: 95px;
+    height: 95px;
+}
+
+/* Header */
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navbar */
+nav {
+    background-color: #004e92;
+    text-align: left;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Main Content */
+
+.container {
+    max-width: 1850px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+li{
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px); 
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px; 
+    text-align: center;
+}
+
+.card img {
+    width: 100%; 
+    height: 70%; 
+    object-fit: cover; 
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #004e92;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+}
+
+.dark-theme-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.dark-theme-card {
+    flex-basis: calc(33.33% - 20px); 
+    background-color: #474747;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px; 
+    text-align: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+        header h1 {
+            font-size: 28px;
+        }
+        nav ul li {
+            margin-right: 10px;
+        }
+        nav a {
+            font-size: 16px;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .card {
+            flex-basis: calc(50% - 10px);
+            margin: 10px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            font-size: 18px;
+        }
+        .card p {
+            font-size: 14px;
+        }
+        footer {
+            font-size: 14px;
+        }
+    }

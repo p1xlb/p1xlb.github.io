@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Charters - Plane Charter Services</title>
+    <script src="styles.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+<body>
+    <header>
+
+        <div>
+            <h1>National Charters</h1>
+            <p>All Needs  Aircraft Chartering</p>    
+        </div>
+        <div>
+            <img class="logo" src="national.png" alt="logo">
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="services"><a href="#">Services</a></li>
+            <li class="fleet"><a href="#">Fleet</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+            <li><button id="theme-button">THEME</button></li>
+        </ul>
+    </nav>
+
+    <!-- Inside the .container div, replace the "About Me" section with the contact form -->
+<div class="container">
+    <h2>Contact Us</h2>
+    <form action="process_form.php" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="aircraft">Type of Aircraft:</label>
+            <select id="aircraft" name="aircraft">
+                <option value="Luxury Jet">Luxury Jet</option>
+                <option value="Turboprop">Turboprop</option>
+                <option value="Helicopter">Helicopter</option>
+                <option value="Ultra Long Range Jet">Ultra Long Range Jet</option>
+            </select>
+        </div>
+        <label>Types of Services:</label>
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" id="service1" name="services[]" value="Special Service Flight Attendant">
+                <label for="service1">Special Service Flight Attendant</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="service2" name="services[]" value="World Class Catering">
+                <label for="service2">World Class Catering</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+    <footer>
+    &copy; 2023 National Charters | All Rights Reserved
+</footer>
+</body>
