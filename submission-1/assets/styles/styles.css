@@ -74,7 +74,7 @@ aside{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-    flex-flow: column nowrap;
+    flex-flow: column;
     display: flex;
     flex: 1;
     align-items: center;
@@ -98,7 +98,7 @@ aside address{
 article{
     flex: 3;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
 }
 
 article h2{
@@ -130,11 +130,11 @@ footer p:hover{
 .profile{
     flex: 5;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
 }
 
 .profile-image{
-    width: 1465px;
+    width: 100%;
 }
 
 .row-sections{
@@ -174,4 +174,40 @@ footer p:hover{
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px){
+    main{
+        flex-flow: column nowrap;
+    }
+
+    aside{
+        margin-top: 20px;
+    }
+
+    .profile-image{
+        width: 100%;
+    }
+
+    .row-sections {
+        flex-direction: column;
+    }
+
+    .row-sections img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px){
+    .profile-image{
+        width: 100%;
+    }
+
+    .row-sections {
+        flex-direction: column;
+    }
+
+    .row-sections img{
+        width: 100%;
+    }
 }
