@@ -179,7 +179,6 @@ footer p:hover{
 #darkModeToggle {
     background: none;
     border: none;
-    cursor: pointer;
     padding: 5px;
   margin-right: 20px;
 }
