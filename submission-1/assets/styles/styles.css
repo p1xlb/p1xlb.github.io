@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    background-color: #89CFF3;
+}
+
+header{
+    display: inline;
+}
+
+main{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.navbar{
+    text-align: left;
+    justify-content: space-between;
+    background-color: #00A9FF;
+    color: #A0E9FF;
+    display: flex;
+    top: 0;
+    padding-left: 20px;
+    position: sticky;
+}
+
+nav{
+    font-size: 20px;
+    padding: 12px;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: #A0E9FF;
+}
+
+aside{
+    /* background-color: #00A9FF;
+    color: #A0E9FF;
+    padding: 20px;
+    position: sticky;
+    top: 0; */
+    background-color: #A0E9FF;
+    color: #333;
+    padding: 20px;
+    /* margin: 20px; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    flex-flow: column nowrap;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+aside img{
+    width: 70%;
+}
+
+aside p{
+    text-align: justify;
+}
+
+aside address{
+    line-height: 1.5;
+    padding: 20px;
+    padding-top: 0;
+    text-align: left;
+}
+
+article{
+    flex: 3;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article h2{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+article h3{
+    font-size: 25px;
+    margin-top: 0;
+}
+
+article p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+footer{
+    background-color: #00A9FF;
+    color: #A0E9FF;
+    padding: 10px;
+    bottom: 0;
+}
+
+footer p:hover{
+    text-align: center;
+}
+
+.profile{
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.profile-image{
+    width: 1465px;
+}
+
+.row-sections{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.row-sections section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-sections h3{
+    text-align: center;
+}
+
+.row-sections p{
+    font-size: 17px;
+}
+
+.row-sections img{
+    width: 50%;
+}
+
+.row-sections p{
+    text-align: justify;
+}
+
+.card{
+    background-color: #A0E9FF;
+    color: #333;
+    padding: 20px;
+    padding-top: 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
